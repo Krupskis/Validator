@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>
+            Validator
+        </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <script src="luhn.js"></script>
+    </head>
+    <body>
+        <div class="nav">
+            <a class="nav-link active" href="index.html">Validator</a>
+            <a class="nav-link color" href="how_to_use.html">How Does it Work</a>
+            <a class="nav-link color" href="info.html">Info</a>
+            <a class="nav-link color" href="privacy">Privacy</a>
+        </div>
+        <div class="container">
+            <form>
+            <div class="input-group input-group-lg padding">
+                <input id="number" type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="Credit Card Number">
+                <button onclick="luhn()" type="button" class="btn btn-primary button">Check</button>
+            </div>
+            </form>
+            <div class="alert alert-primary visibility" role="alert" id="alert">
+                <a id="alert-text">A simple primary alert—check it out!</a>
+            </div>
+        </div>
+
+        <div class="instructions color" id="instructions-padding">
+            <p>Instructions: input your credit card number and press check to validate</p>
+        </div>
+
+    </body>
+</html>
